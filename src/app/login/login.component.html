@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="card text-center mx-auto p-2 m-2">
+  <div class="card-header">
+    Login
+  </div>
+  <div class="card-body">
+ <div class="form-group row">
+  <label for="ClickName" class="col-md-4" >User Name</label>
+  <div class="col-md-8">
+    <input [(ngModel)]="login.username" id="ClickName" type="text" placeholder="Enter Name" name="name" class="form-control">
+  </div>
+ </div>
+ <div class="form-group row">
+  <label for="ClickPassword" class="col-md-4" >Password</label>
+  <div class="col-md-8">
+    <input [(ngModel)]="login.password" id="ClickPassword" type="password" placeholder="Enter Password" name="Password" class="form-control">
+  </div>
+ </div>
+  </div>
+  <div class="card-footer text-muted">
+    <p class="text-danger">{{loginErrorMessage}}</p>
+   <button (click)="LoginClick()"  type="submit" >Login</button>
+  </div>
+</div>
+</div>
